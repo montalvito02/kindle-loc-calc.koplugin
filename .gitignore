@@ -1,6 +1,5 @@
 # Ignore all binaries
 build/
-kindle-loc-calc.koplugin/epub_html_sumsize
 
 *.exe
 *.o
