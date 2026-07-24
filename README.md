@@ -9,7 +9,7 @@ arm-linux-gnueabihf-gcc -O3 -march=armv7-a -mfpu=neon-vfpv3 -mfloat-abi=hard -st
 ```
 This binary works on my Kindle PW3 and should work on every [kindle with a Freescale/NXP i.MX6 SoloLite CPU](https://en.wikipedia.org/wiki/Amazon_Kindle). If that is not the case of your device, you will need to compile the c code yourself. Any LLM should be able to provide you with the appropiate compilation script.
 
-The output will be inside the epub_html_sumsize/src/build/arm folder. If compilation fails, try to create the folder before compiling. After you have the file, place it in the appropiate folder.
+The output will be inside the epub_html_sumsize/src/build/arm folder. If compilation fails, try to create the folder before compiling. After you have the file, place it in the appropiate folder and replace the other binary.
 
 Once finished, you should have the following folder structure inside of koreader:
 
