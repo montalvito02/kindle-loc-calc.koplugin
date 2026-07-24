@@ -24,4 +24,15 @@ koreader/
 ```
 The plugin will add a new menu entry in the "Tools" menu, and also a new action that can be associated with a gesture.
 
+<p align="center">
+  <img src="docs/menu.png" width="300">
+</p>
+
 When executed, the following window will appear:
+
+<p align="center">
+  <img src="docs/popup.png" width="300">
+</p>
+
+## How it works
+The lua code is a wrapper around the binary. It calls the binary with the currently open file as argument. If the currently open file is not an epub, an error message will return. If it is an epub it will look for all html-like files inside of it and sum its sizes. Then with some simple math lua will calculate the total number of locations. The current locations is an approximation, using current_page / total_pages * total_locations.
